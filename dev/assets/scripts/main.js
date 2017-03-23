@@ -22,8 +22,8 @@ papp.petData;
 papp.markers = [];
 papp.userMarker;
 papp.selectedShelterInfo = [];
-papp.userMarkerImage = './user_marker.png';
-papp.birdMarkerImage = './bird_marker.png';
+papp.userMarkerImage = './public/assets/images/user_marker.png';
+papp.birdMarkerImage = './public/assets/images/bird_marker.png';
 
 papp.displayPetMedia = function(media) {
     papp.elements.$petGallery.empty();
@@ -152,7 +152,7 @@ papp.displayPetCard = function(petInfo) {
     else {
          petCard.append($('<img/>')
         .addClass('cardImg')
-        .attr('src', './no_images_found.jpg'));
+        .attr('src', './public/assets/images/no_images_found.jpg'));
     }
 
     // Add the pet's name and breen to the card
@@ -508,7 +508,7 @@ papp.spawnTheDuck = function() {
     const marker = new google.maps.Marker({
         map: papp.map,
         position: pos,
-        icon: './wlrd_marker.png',
+        icon: './public/assets/images/wlrd_marker.png',
         visible: false
     });
 
