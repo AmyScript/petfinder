@@ -26,8 +26,8 @@ papp.petData;
 papp.markers = [];
 papp.userMarker;
 papp.selectedShelterInfo = [];
-papp.userMarkerImage = '../assets/images/user_marker.png';
-papp.birdMarkerImage = '../assets/images/bird_marker.png';
+papp.userMarkerImage = '../../assets/images/user_marker.png';
+papp.birdMarkerImage = '../../assets/images/bird_marker.png';
 
 papp.displayPetMedia = function (media) {
     var _$$flickity;
@@ -45,7 +45,7 @@ papp.displayPetMedia = function (media) {
             }
         });
     } else {
-        $('<img/>').addClass('petImage carouselItem').attr('src', '../assets/images/no_images_found.jpg').appendTo($imageCarousel);
+        $('<img/>').addClass('petImage carouselItem').attr('src', '../../assets/images/no_images_found.jpg').appendTo($imageCarousel);
     }
 
     $('.mainCarousel').flickity((_$$flickity = {
@@ -464,7 +464,7 @@ papp.spawnTheDuck = function () {
     var marker = new google.maps.Marker({
         map: papp.map,
         position: pos,
-        icon: '../assets/images/wlrd_marker.png',
+        icon: '../../assets/images/wlrd_marker.png',
         visible: false
     });
 
