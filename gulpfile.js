@@ -8,7 +8,7 @@ const reload = browserSync.reload;
 
 gulp.task('browser-sync', () => {
     browserSync.init({
-        server: './public',
+        server: './',
         "https": true
     })
 });
