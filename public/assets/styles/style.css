@@ -263,7 +263,8 @@ h1 {
   font-weight: bold;
   margin-bottom: 5px;
   font-size: 40px;
-  letter-spacing: 3px; }
+  letter-spacing: 3px;
+  text-align: center; }
 
 .smallTitle {
   font-size: 20px; }
@@ -365,3 +366,17 @@ button.viewDetails {
 #searchField {
   height: 30px;
   padding-left: 7px; }
+
+@media (max-width: 768px) {
+  .petDisplayContainer {
+    -ms-flex-direction: column;
+        flex-direction: column; } }
+
+@media (max-width: 480px) {
+  .searchOverlayTop {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    height: 120px; }
+  .petDisplayContainer {
+    -ms-flex-direction: column;
+        flex-direction: column; } }

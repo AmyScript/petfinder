@@ -472,6 +472,7 @@ papp.events = function () {
         }
 
         $('.searchOverlay').addClass('searchOverlayTop');
+        $('.title2').hide();
     });
 
     papp.searchField.on('input', function (event) {

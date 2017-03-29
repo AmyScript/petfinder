@@ -37,6 +37,7 @@ h1 {
   margin-bottom: 5px;
   font-size: 40px;
   letter-spacing: 3px;
+  text-align: center;
 
 }
 
@@ -152,3 +153,19 @@ button.viewDetails {
   padding-left: 7px;
 }
 
+@media (max-width: 768px) {
+  .petDisplayContainer {
+      flex-direction: column;
+  }
+
+}
+@media (max-width: 480px) {
+  .searchOverlayTop {
+      flex-direction: column;
+      height: 120px;
+  }
+  .petDisplayContainer {
+      flex-direction: column;
+  }
+
+}
